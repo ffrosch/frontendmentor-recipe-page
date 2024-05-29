@@ -18,8 +18,8 @@ export interface IRecipe {
 }
 
 export default function Recipe(props: IRecipe) {
-  const { title, description, time, ingredients, instructions, nutrition } =
-    props;
+  const { title } = props;
+  // const { description, time, ingredients, instructions, nutrition } = props;
 
   return (
     <article>
