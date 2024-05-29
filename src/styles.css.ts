@@ -1,18 +1,11 @@
-import { globalStyle, style } from '@vanilla-extract/css';
+import { globalStyle } from '@vanilla-extract/css';
 import { vars } from './theme.css.ts';
 
 globalStyle('body', {
-  backgroundColor: vars.color.whiteEggshell,
+  fontFamily: vars.font.type.text,
+  backgroundColor: vars.color.white[300],
 });
 
-export const main = style({
-  display: 'flex',
-  flexDirection: 'column',
-  alignItems: 'center',
-  justifyContent: 'center',
-  height: '100vh',
-});
-
-export const h1 = style({
+globalStyle('h1, h2, h3, h4, h5, h6', {
   fontFamily: vars.font.type.heading,
 });
