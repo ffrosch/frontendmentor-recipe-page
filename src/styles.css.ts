@@ -1,5 +1,14 @@
-import { globalStyle } from '@vanilla-extract/css';
+import { globalStyle, style } from '@vanilla-extract/css';
 import { vars } from './theme.css.ts';
+
+export const srOnly = style({
+  position: 'absolute',
+  left: -10000,
+  top: 'auto',
+  width: 1,
+  height: 1,
+  overflow: 'hidden',
+});
 
 globalStyle('body', {
   fontFamily: vars.font.type.text,

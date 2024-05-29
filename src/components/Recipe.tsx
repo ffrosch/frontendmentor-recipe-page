@@ -1,3 +1,5 @@
+import { srOnly } from '../styles.css.ts';
+
 export interface IRecipe {
   title: string;
   description: string;
@@ -23,7 +25,7 @@ export default function Recipe(props: IRecipe) {
     <article>
       <section>
         <h1>{title}</h1>
-        <h2>Summary</h2>
+        <h2 className={srOnly}>Summary</h2>
         <h3>Preparation time</h3>
       </section>
       <section>
