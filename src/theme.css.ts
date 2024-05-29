@@ -11,8 +11,8 @@ export const vars = createGlobalTheme(':root', {
       300: 'hsl(30, 54%, 90%)', // eggshell
       400: 'hsl(30, 18%, 87%)', // light grey
     },
-    lightBrown: 'hsl(30, 10%, 34%)',
-    charcoal: 'hsl(24, 5%, 18%)',
+    wengeBrown: 'hsl(30, 10%, 34%)',
+    darkCharcoal: 'hsl(24, 5%, 18%)',
   },
 
   font: {
