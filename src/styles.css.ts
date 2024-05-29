@@ -5,14 +5,14 @@ globalStyle('body', {
   backgroundColor: vars.color.whiteEggshell,
 });
 
-export const root = style({
-  fontFamily: 'Arial, Helvetica, sans-serif',
-});
-
 export const main = style({
   display: 'flex',
   flexDirection: 'column',
   alignItems: 'center',
   justifyContent: 'center',
   height: '100vh',
+});
+
+export const h1 = style({
+  fontFamily: vars.font.type.heading,
 });

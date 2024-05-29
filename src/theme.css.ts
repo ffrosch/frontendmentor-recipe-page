@@ -1,4 +1,5 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
+import { fonts } from './fonts.css.ts';
 
 export const vars = createGlobalTheme(':root', {
   color: {
@@ -11,7 +12,12 @@ export const vars = createGlobalTheme(':root', {
     brownLight: 'hsl(30, 10%, 34%)',
     charcoalDark: 'hsl(24, 5%, 18%)',
   },
+
   font: {
+    type: {
+      heading: `${fonts.youngSerif}, serif`,
+      text: `${fonts.outfit}, sans-serif`,
+    },
     size: {
       medium: '16px',
     },
