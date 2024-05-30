@@ -2,7 +2,6 @@ import { style } from '@vanilla-extract/css';
 import { media, vars } from '../theme.css.ts';
 
 export const recipe = style({
-  width: '100%',
   backgroundColor: vars.color.white[100],
   lineHeight: 2,
 
@@ -10,21 +9,33 @@ export const recipe = style({
     [media.query.sm]: {
       maxWidth: '46rem',
       borderRadius: '1.5rem',
-      padding: '2.5rem',
+      margin: 'min(max(calc((100% - 500px) / 4), 1rem), 8rem)',
+    },
+  },
+});
+
+export const imageContainer = style({
+  maxWidth: '100%',
+  height: 175,
+
+  '@media': {
+    [media.query.sm]: {
+      height: 'calc(300px + 5rem)',
+      margin: '2.5rem',
     },
   },
 });
 
 export const image = style({
-  width: '100%',
-  height: 175,
-
   '@media': {
     [media.query.sm]: {
-      height: 300,
       borderRadius: '0.75rem',
     },
   },
+});
+
+export const section = style({
+  margin: '2rem',
 });
 
 export const title = style({
