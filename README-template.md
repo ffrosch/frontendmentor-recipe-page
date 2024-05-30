@@ -20,6 +20,10 @@ This is a solution to the [Recipe page challenge on Frontend Mentor](https://www
 
 ## Overview
 
+### The challenge
+
+Your challenge is to build out this recipe page and get it looking as close to the design as possible.
+
 ### Screenshot
 
 ![](./screenshot.jpg)
