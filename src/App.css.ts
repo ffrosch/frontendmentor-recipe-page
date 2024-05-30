@@ -4,5 +4,5 @@ export const main = style({
   display: 'grid',
   placeItems: 'center',
   height: '100%',
-  width: '100vw',
+  width: '100%',
 });
