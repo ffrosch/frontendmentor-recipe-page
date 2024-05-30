@@ -9,7 +9,7 @@ export const recipe = style({
     [media.query.sm]: {
       maxWidth: '46rem',
       borderRadius: '1.5rem',
-      margin: `min(max(calc((100% - ${media.size.sm}px) / 4), 1rem), 8rem)`,
+      margin: `min(max(calc((100% - ${media.size.sm}px) / 4), 0.25rem), 8rem)`,
     },
   },
 });
@@ -20,8 +20,8 @@ export const imageContainer = style({
 
   '@media': {
     [media.query.sm]: {
-      height: 'calc(300px + 5rem)',
-      margin: '2.5rem',
+      height: `min(calc(80vw - 175px), calc(300px + ${vars.space.md} * 2))`,
+      margin: vars.space.md,
     },
   },
 });
