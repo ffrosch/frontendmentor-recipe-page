@@ -1,5 +1,9 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
-import { fonts } from './fonts.css.ts';
+
+export const fonts = {
+  outfit: "'Outfit'",
+  youngSerif: "'Young Serif'",
+};
 
 export const vars = createGlobalTheme(':root', {
   color: {
@@ -15,17 +19,16 @@ export const vars = createGlobalTheme(':root', {
     darkCharcoal: 'hsl(24, 5%, 18%)',
   },
 
-  font: {
-    type: {
-      heading: `${fonts.youngSerif}, serif`,
-      text: `${fonts.outfit}, sans-serif`,
-    },
-    size: {
-      xs: '0.875rem',
-      sm: '1rem',
-      md: '1.25rem',
-      lg: '1.75rem',
-      xl: '2.25rem',
-    },
+  fontFamily: {
+    heading: `${fonts.youngSerif}, serif`,
+    text: `${fonts.outfit}, sans-serif`,
+  },
+
+  fontSize: {
+    xs: '0.875rem',
+    sm: '1rem',
+    md: '1.25rem',
+    lg: '1.75rem',
+    xl: '2.25rem',
   },
 });
