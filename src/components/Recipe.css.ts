@@ -20,7 +20,7 @@ export const imageContainer = style({
 
   '@media': {
     [media.query.sm]: {
-      height: `min(calc(80vw - 175px), calc(300px + ${vars.space.md} * 2))`,
+      height: `min(calc(80vw - 175px), 300px)`,
       margin: vars.space.md,
     },
   },
