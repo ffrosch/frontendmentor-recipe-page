@@ -1,4 +1,5 @@
 import { srOnly } from '../styles.css.ts';
+import * as styles from './Recipe.css.ts';
 
 export interface IRecipe {
   title: string;
@@ -24,18 +25,18 @@ export default function Recipe(props: IRecipe) {
   return (
     <article>
       <section>
-        <h1>{title}</h1>
+        <h1 className={styles.title}>{title}</h1>
         <h2 className={srOnly}>Summary</h2>
-        <h3>Preparation time</h3>
+        <h3 className={styles.prepTime}>Preparation time</h3>
       </section>
       <section>
-        <h2>Ingredients</h2>
+        <h2 className={styles.sectionHeading}>Ingredients</h2>
       </section>
       <section>
-        <h2>Instructions</h2>
+        <h2 className={styles.sectionHeading}>Instructions</h2>
       </section>
       <section>
-        <h2>Nutrition</h2>
+        <h2 className={styles.sectionHeading}>Nutrition</h2>
       </section>
     </article>
   );
