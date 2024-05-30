@@ -2,14 +2,14 @@ import { globalFontFace, globalStyle } from '@vanilla-extract/css';
 import { fonts, vars } from './theme.css.ts';
 
 globalFontFace(fonts.outfit, {
-  src: 'url(./assets/fonts/outfit/Outfit-VariableFont_wght.ttf)',
+  src: 'url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf)',
   fontWeight: [400, 600, 700],
   fontStyle: 'normal',
   fontDisplay: 'swap',
 });
 
 globalFontFace(fonts.youngSerif, {
-  src: 'url(./assets/fonts/young-serif/YoungSerif-Regular.ttf)',
+  src: 'url(/assets/fonts/young-serif/YoungSerif-Regular.ttf)',
   fontWeight: 400,
   fontStyle: 'normal',
   fontDisplay: 'swap',
@@ -19,6 +19,7 @@ globalStyle('body', {
   fontFamily: vars.fontFamily.text,
   fontSize: vars.fontSize.sm,
   backgroundColor: vars.color.white[400],
+  minWidth: 320,
 });
 
 globalStyle('h1, h2, h3, h4, h5, h6', {
