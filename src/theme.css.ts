@@ -21,7 +21,11 @@ export const vars = createGlobalTheme(':root', {
       text: `${fonts.outfit}, sans-serif`,
     },
     size: {
-      md: '1rem',
+      xs: '0.875rem',
+      sm: '1rem',
+      md: '1.25rem',
+      lg: '1.75rem',
+      xl: '2.25rem',
     },
   },
 });
