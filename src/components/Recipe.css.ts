@@ -21,7 +21,7 @@ export const imageContainer = style({
   '@media': {
     [media.query.sm]: {
       height: `min(calc(80vw - 175px), 300px)`,
-      margin: vars.space.md,
+      margin: vars.space.lg,
     },
   },
 });
@@ -35,24 +35,35 @@ export const image = style({
 });
 
 export const section = style({
-  margin: vars.space.md,
+  margin: `${vars.space.md} ${vars.space.lg}`,
 });
 
 export const title = style({
   color: vars.color.darkCharcoal,
+  marginBottom: vars.space.sm,
 });
 
-export const prepTime = style({
+export const preparationContainer = style({
+  background: vars.color.white[200],
+  padding: vars.space.sm,
+  paddingLeft: vars.space.md,
+  marginTop: vars.space.md,
+  marginBottom: vars.space.lg,
+});
+
+export const preparationHeading = style({
   color: vars.color.accent,
+  marginBottom: vars.space.xs,
 });
 
 export const sectionHeading = style({
   color: vars.color.primary,
+  marginBottom: vars.space.sm,
 });
 
 export const hr = style({
   height: 1,
-  margin: vars.space.md,
+  margin: `0 ${vars.space.lg}`,
   border: 'none',
   background: vars.color.white[400],
 });

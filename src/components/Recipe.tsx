@@ -45,25 +45,27 @@ export default function Recipe(props: IRecipe) {
         <h1 className={styles.title}>{title} Recipe</h1>
         <h2 className={srOnly}>Summary</h2>
         <p>{description}</p>
-        <h3 className={styles.prepTime}>Preparation time</h3>
-        <ul>
-          <li>
-            <p>
-              <strong>Total:</strong> Approximately{' '}
-              {time.preparation + time.cooking} minutes
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Preparation:</strong> {time.preparation} minutes
-            </p>
-          </li>
-          <li>
-            <p>
-              <strong>Cooking:</strong> {time.cooking} minutes
-            </p>
-          </li>
-        </ul>
+        <div className={styles.preparationContainer}>
+          <h3 className={styles.preparationHeading}>Preparation time</h3>
+          <ul>
+            <li>
+              <p>
+                <strong>Total:</strong> Approximately{' '}
+                {time.preparation + time.cooking} minutes
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Preparation:</strong> {time.preparation} minutes
+              </p>
+            </li>
+            <li>
+              <p>
+                <strong>Cooking:</strong> {time.cooking} minutes
+              </p>
+            </li>
+          </ul>
+        </div>
       </section>
       <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Ingredients</h2>
