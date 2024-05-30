@@ -3,7 +3,6 @@ import { fonts, media, vars } from './theme.css.ts';
 
 globalFontFace(fonts.outfit, {
   src: 'url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf)',
-  fontWeight: [400, 600, 700],
   fontStyle: 'normal',
   fontDisplay: 'swap',
 });
