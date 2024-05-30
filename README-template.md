@@ -158,6 +158,8 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Here are the articles and solutions that helped me during the challenge:
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+- [Kilterset | Styling with Vanilla Extract](https://www.kilterset.com/blog/styling-with-vanilla-extract)
+- [Nearform Commerce | Theming a React Application with Vanilla Extract](https://commerce.nearform.com/blog/2021/vanilla-extract)
+- [Douges.dev | Change how you write your CSS-in-JS for better performance](https://douges.dev/blog/taming-the-beast-that-is-css-in-js)
