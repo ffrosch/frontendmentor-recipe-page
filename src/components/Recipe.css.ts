@@ -9,7 +9,7 @@ export const recipe = style({
     [media.query.sm]: {
       maxWidth: '46rem',
       borderRadius: '1.5rem',
-      margin: 'min(max(calc((100% - 500px) / 4), 1rem), 8rem)',
+      margin: `min(max(calc((100% - ${media.size.sm}px) / 4), 1rem), 8rem)`,
     },
   },
 });
