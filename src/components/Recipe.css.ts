@@ -4,6 +4,7 @@ import { media, vars } from '../theme.css.ts';
 export const recipe = style({
   width: '100%',
   backgroundColor: vars.color.white[100],
+  lineHeight: 2,
 
   '@media': {
     [media.query.sm]: {
@@ -36,4 +37,36 @@ export const prepTime = style({
 
 export const sectionHeading = style({
   color: vars.color.primary,
+});
+
+export const table = style({
+  width: '100%',
+  borderCollapse: 'collapse',
+  textAlign: 'left',
+});
+
+export const tr = style({
+  border: `1px solid ${vars.color.white[400]}`,
+  borderLeft: 'none',
+  borderRight: 'none',
+
+  selectors: {
+    '&:first-child': {
+      border: 'none',
+    },
+    '&:last-child': {
+      border: 'none',
+    },
+  },
+});
+
+export const th = style({
+  textTransform: 'capitalize',
+  paddingLeft: '2rem',
+});
+
+export const td = style({
+  color: vars.color.primary,
+  fontWeight: 'bold',
+  paddingRight: '2rem',
 });

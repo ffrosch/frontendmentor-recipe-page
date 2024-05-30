@@ -15,9 +15,10 @@ globalFontFace(fonts.youngSerif, {
 });
 
 globalStyle('body', {
+  color: vars.color.wengeBrown,
   fontFamily: vars.fontFamily.text,
   fontSize: vars.fontSize.sm,
-  backgroundColor: vars.color.white[400],
+  background: vars.color.white[400],
   minWidth: media.size.xs,
 });
 

@@ -42,3 +42,11 @@ h6 {
 #__next {
   isolation: isolate;
 }
+tbody,
+thead,
+th,
+tr,
+caption {
+  text-align: inherit;
+  font-weight: 400;
+}
