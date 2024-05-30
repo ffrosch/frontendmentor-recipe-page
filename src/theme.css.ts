@@ -35,6 +35,10 @@ export const vars = createGlobalTheme(':root', {
     darkCharcoal: 'hsl(24, 5%, 18%)',
   },
 
+  space: {
+    md: '2.5rem',
+  },
+
   fontFamily: {
     heading: `${fonts.youngSerif}, serif`,
     text: `${fonts.outfit}, sans-serif`,
