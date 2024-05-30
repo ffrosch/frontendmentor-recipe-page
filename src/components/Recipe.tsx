@@ -77,6 +77,7 @@ export default function Recipe(props: IRecipe) {
           })}
         </ul>
       </section>
+      <hr className={styles.hr} />
       <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Instructions</h2>
         <ol>
@@ -97,6 +98,7 @@ export default function Recipe(props: IRecipe) {
           })}
         </ol>
       </section>
+      <hr className={styles.hr} />
       <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Nutrition</h2>
         <table className={styles.table}>

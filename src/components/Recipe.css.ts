@@ -50,6 +50,13 @@ export const sectionHeading = style({
   color: vars.color.primary,
 });
 
+export const hr = style({
+  height: 1,
+  margin: vars.space.md,
+  border: 'none',
+  background: vars.color.white[400],
+});
+
 export const table = style({
   width: '100%',
   borderCollapse: 'collapse',
