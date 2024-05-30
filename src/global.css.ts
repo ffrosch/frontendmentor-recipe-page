@@ -1,5 +1,5 @@
 import { globalFontFace, globalStyle } from '@vanilla-extract/css';
-import { fonts, vars } from './theme.css.ts';
+import { fonts, media, vars } from './theme.css.ts';
 
 globalFontFace(fonts.outfit, {
   src: 'url(/assets/fonts/outfit/Outfit-VariableFont_wght.ttf)',
@@ -19,7 +19,7 @@ globalStyle('body', {
   fontFamily: vars.fontFamily.text,
   fontSize: vars.fontSize.sm,
   backgroundColor: vars.color.white[400],
-  minWidth: 320,
+  minWidth: media.size.xs,
 });
 
 globalStyle('h1, h2, h3, h4, h5, h6', {

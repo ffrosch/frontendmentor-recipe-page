@@ -1,12 +1,12 @@
 import { style } from '@vanilla-extract/css';
-import { vars } from '../theme.css.ts';
+import { media, vars } from '../theme.css.ts';
 
 export const recipe = style({
   width: '100%',
   backgroundColor: vars.color.white[100],
 
   '@media': {
-    '(min-width: 500px)': {
+    [media.query.sm]: {
       maxWidth: '46rem',
       borderRadius: '1.5rem',
       padding: '2.5rem',
@@ -14,16 +14,12 @@ export const recipe = style({
   },
 });
 
-export const title = style({
-  color: vars.color.darkCharcoal,
-});
-
 export const image = style({
   width: '100%',
   height: 175,
 
   '@media': {
-    '(min-width: 500px)': {
+    [media.query.sm]: {
       height: 300,
       borderRadius: '0.75rem',
     },

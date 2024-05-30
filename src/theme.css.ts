@@ -1,8 +1,24 @@
 import { createGlobalTheme } from '@vanilla-extract/css';
 
+const mediaSizes = {
+  xs: 320,
+  sm: 500,
+};
+
 export const fonts = {
   outfit: "'Outfit'",
   youngSerif: "'Young Serif'",
+};
+
+export const media = {
+  size: {
+    xs: mediaSizes.xs,
+    sm: mediaSizes.sm,
+  },
+  query: {
+    xs: `(min-width: ${mediaSizes.xs}px)`,
+    sm: `(min-width: ${mediaSizes.sm}px)`,
+  },
 };
 
 export const vars = createGlobalTheme(':root', {
