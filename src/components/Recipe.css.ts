@@ -35,7 +35,7 @@ export const image = style({
 });
 
 export const section = style({
-  margin: '2rem',
+  margin: vars.space.md,
 });
 
 export const title = style({
