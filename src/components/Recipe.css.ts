@@ -41,6 +41,7 @@ export const section = style({
 export const title = style({
   color: vars.color.darkCharcoal,
   marginBottom: vars.space.sm,
+  letterSpacing: '0.075rem',
 });
 
 export const preparationContainer = style({
@@ -54,6 +55,7 @@ export const preparationContainer = style({
 export const preparationHeading = style({
   color: vars.color.accent,
   marginBottom: vars.space.xs,
+  letterSpacing: 0,
 });
 
 export const sectionHeading = style({
