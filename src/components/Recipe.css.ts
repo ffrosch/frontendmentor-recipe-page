@@ -30,6 +30,10 @@ export const image = style({
   },
 });
 
+export const title = style({
+  color: vars.color.darkCharcoal,
+});
+
 export const prepTime = style({
   color: vars.color.accent,
 });
