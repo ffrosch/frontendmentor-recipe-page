@@ -12,10 +12,10 @@ export interface IRecipe {
   ingredients: string[];
   instructions: string[];
   nutrition: {
-    calories: number;
-    carbs: number;
-    protein: number;
-    fat: number;
+    calories: string;
+    carbs: string;
+    protein: string;
+    fat: string;
   };
 }
 
@@ -32,14 +32,16 @@ export default function Recipe(props: IRecipe) {
 
   return (
     <article className={styles.recipe}>
-      <img
-        className={styles.image}
-        src={picture}
-        alt={title}
-        width='1312'
-        height='600'
-      />
-      <section>
+      <div className={styles.imageContainer}>
+        <img
+          className={styles.image}
+          src={picture}
+          alt={title}
+          width='1312'
+          height='600'
+        />
+      </div>
+      <section className={styles.section}>
         <h1 className={styles.title}>{title} Recipe</h1>
         <h2 className={srOnly}>Summary</h2>
         <p>{description}</p>
@@ -63,7 +65,7 @@ export default function Recipe(props: IRecipe) {
           </li>
         </ul>
       </section>
-      <section>
+      <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Ingredients</h2>
         <ul>
           {ingredients.map((ingredient, index) => {
@@ -75,7 +77,7 @@ export default function Recipe(props: IRecipe) {
           })}
         </ul>
       </section>
-      <section>
+      <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Instructions</h2>
         <ol>
           {instructions.map((instruction, index) => {
@@ -95,7 +97,7 @@ export default function Recipe(props: IRecipe) {
           })}
         </ol>
       </section>
-      <section>
+      <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Nutrition</h2>
         <table className={styles.table}>
           <caption>
