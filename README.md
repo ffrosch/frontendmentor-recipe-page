@@ -107,11 +107,21 @@ If you want more help with writing markdown, we'd recommend checking out [The Ma
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
+I really liked the approach with build-time CSS-in-JS.
+Additionally, Vanilla Extract enforced a lot of constraints that seem cumbersome at first but will make your code more maintainable in the long run (hopefully).
+The consistent usage of theme tokens and the TypeScript alerts whenever I changed something were super helpful and made writing atomic CSS so much fun!
 
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+Looks like I will stick with this tech stack for now.
+For my next projects I want to try out [`classnames`](https://www.npmjs.com/package/classnames) and [`open-props`](https://open-props.style/).
+
+Additionally I would like to read [Writing Performant CSS With vanilla-extract](https://www.lekoarts.de/javascript/writing-performant-css-with-vanilla-extract/) which also gives an example on using `vanilla-extract` with `open-props`.
 
 ### Useful resources
+
+**Note: This article is a bit dated (2021-08)**: A super good and exhaustive overview over CSS-in-JS can be found in [A thorough analysis of CSS-in-TS](https://github.com/andreipfeiffer/css-in-js/blob/main/README.md).
+It compares solutions that support Server Side Rendering and TypeScript.
+The baseline reference for comparison is a CSS Modules approach.
+Last important aspect is type-safety with full TypeScript support.
 
 The disadvantages of runtime CSS-in-JS:
 
