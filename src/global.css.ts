@@ -29,7 +29,7 @@ globalStyle('h1, h2, h3, h4, h5, h6', {
 globalStyle('h1', {
   fontSize: vars.fontSize.xl,
   letterSpacing: '0.075rem',
-  fontWeight: 700,
+  fontWeight: 600,
 });
 
 globalStyle('h2', {
