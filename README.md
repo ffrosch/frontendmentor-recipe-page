@@ -112,7 +112,7 @@ Additionally, Vanilla Extract enforced a lot of constraints that seem cumbersome
 The consistent usage of theme tokens and the TypeScript alerts whenever I changed something were super helpful and made writing atomic CSS so much fun!
 
 Looks like I will stick with this tech stack for now.
-For my next projects I want to try out [`classnames`](https://www.npmjs.com/package/classnames) and [`open-props`](https://open-props.style/).
+For my next projects I want to try out [`classnames`](https://www.npmjs.com/package/classnames), [`open-props`](https://open-props.style/) and [`polished`](https://polished.js.org/).
 
 Additionally I would like to read [Writing Performant CSS With vanilla-extract](https://www.lekoarts.de/javascript/writing-performant-css-with-vanilla-extract/) which also gives an example on using `vanilla-extract` with `open-props`, as well as [The Future of Web Development: Vanilla Extract CSS](https://www.dhiwise.com/post/the-future-of-web-development-vanilla-extract-css) and [CSS in TypeScript with vanilla-extract](https://css-tricks.com/css-in-typescript-with-vanilla-extract/).
 
