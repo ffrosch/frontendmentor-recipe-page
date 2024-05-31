@@ -18,7 +18,7 @@ globalStyle('body', {
   color: vars.color.wengeBrown,
   fontFamily: vars.fontFamily.text,
   fontSize: vars.fontSize.sm,
-  background: vars.color.white[400],
+  background: vars.color.eggShell,
   minWidth: media.size.xs,
 });
 

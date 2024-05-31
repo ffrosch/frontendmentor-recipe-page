@@ -2,7 +2,7 @@ import { style } from '@vanilla-extract/css';
 import { media, vars } from '../theme.css.ts';
 
 export const recipe = style({
-  backgroundColor: vars.color.white[100],
+  backgroundColor: vars.color.white,
 
   '@media': {
     [media.query.sm]: {
@@ -48,7 +48,7 @@ export const title = style({
 });
 
 export const preparationContainer = style({
-  background: vars.color.white[200],
+  background: vars.color.roseWhite,
   padding: vars.space.md,
   paddingLeft: vars.space.md,
   borderRadius: '0.75rem',
@@ -88,7 +88,7 @@ export const hr = style({
   height: 1,
   margin: `0 ${vars.space.xl}`,
   border: 'none',
-  background: vars.color.white[400],
+  background: vars.color.lightGrey,
 });
 
 export const table = style({
@@ -102,7 +102,7 @@ export const caption = style({
 });
 
 export const tr = style({
-  border: `1px solid ${vars.color.white[400]}`,
+  border: `1px solid ${vars.color.lightGrey}`,
   borderLeft: 'none',
   borderRight: 'none',
 
