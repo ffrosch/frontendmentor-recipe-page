@@ -1,89 +1,158 @@
-# Frontend Mentor - Recipe page
+# Frontend Mentor - Recipe page solution
 
-![Design preview for the Recipe page coding challenge](./design/desktop-preview.jpg)
+This is a solution to the [Recipe page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/recipe-page-KiTsR8QQKm). Frontend Mentor challenges help you improve your coding skills by building realistic projects.
 
-## Welcome! 👋
+## Table of contents
 
-Thanks for checking out this front-end coding challenge.
+- [Overview](#overview)
+  - [The challenge](#the-challenge)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+- [Author](#author)
+- [Acknowledgments](#acknowledgments)
 
-[Frontend Mentor](https://www.frontendmentor.io) challenges help you improve your coding skills by building realistic projects.
+**Note: Delete this note and update the table of contents based on what sections you keep.**
 
-**To do this challenge, you need a basic understanding of HTML and CSS.**
+## Overview
 
-## The challenge
+### The challenge
 
 Your challenge is to build out this recipe page and get it looking as close to the design as possible.
 
-You can use any tools you like to help you complete the challenge. So if you've got something you'd like to practice, feel free to give it a go.
+### Screenshot
 
-Want some support on the challenge? [Join our community](https://www.frontendmentor.io/community) and ask questions in the **#help** channel.
+![](./screenshot.jpg)
 
-## Where to find everything
+### Links
 
-Your task is to build out the project to the designs inside the `/design` folder. You will find both a mobile and a desktop version of the design. 
+- [GitHub Repo](https://github.com/ffrosch/frontendmentor-recipe-page)
+- [Live Site](https://ffrosch.github.io/frontendmentor-recipe-page/)
 
-The designs are in JPG static format. Using JPGs will mean that you'll need to use your best judgment for styles such as `font-size`, `padding` and `margin`. 
+## My process
 
-If you would like the design files (we provide Sketch & Figma versions) to inspect the design in more detail, you can [subscribe as a PRO member](https://www.frontendmentor.io/pro).
+## Tech Stack
 
-All the required assets for this project are in the `/assets` folder. The images are already exported for the correct screen size and optimized.
+This exercise uses `Vite`, `react`, `typescript`, `vanilla-extract` and a custom deployment workflow on Github Pages.
 
-We also include variable and static font files for the required fonts for this project. You can choose to either link to Google Fonts or use the local font files to host the fonts yourself. Note that we've removed the static font files for the font weights that aren't needed for this project.
+### Installation
 
-There is also a `style-guide.md` file containing the information you'll need, such as color palette and fonts.
+```shell
+# install in current directory
+npm create vite@latest . -- --template react-ts
+npm install @vanilla-extract/css
+npm install --save-dev @vanilla-extract/vite-plugin
+```
 
-## Building your project
+### Configuration
 
-Feel free to use any workflow that you feel comfortable with. Below is a suggested process, but do not feel like you need to follow these steps:
+Set the `base` key for deployment with Github Pages custom workflow.
+Add the `vanilla-extract` plugin to the `plugins` array.
+Further configuration options are available in the [Vite docs | Configuration Reference](https://vanilla-extract.style/documentation/integrations/vite/), but shouldn't be necessary.
 
-1. Initialize your project as a public repository on [GitHub](https://github.com/). Creating a repo will make it easier to share your code with the community if you need help. If you're not sure how to do this, [have a read-through of this Try Git resource](https://try.github.io/).
-2. Configure your repository to publish your code to a web address. This will also be useful if you need some help during a challenge as you can share the URL for your project with your repo URL. There are a number of ways to do this, and we provide some recommendations below.
-3. Look through the designs to start planning out how you'll tackle the project. This step is crucial to help you think ahead for CSS classes to create reusable styles.
-4. Before adding any styles, structure your content with HTML. Writing your HTML first can help focus your attention on creating well-structured content.
-5. Write out the base styles for your project, including general content styles, such as `font-family` and `font-size`.
-6. Start adding styles to the top of the page and work down. Only move on to the next section once you're happy you've completed the area you're working on.
+`vite.config.js`
 
-## Deploying your project
+```js
+/* ... other imports ...*/
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
-As mentioned above, there are many ways to host your project for free. Our recommend hosts are:
+export default defineConfig({
+  base: '/frontendmentor-recipe-page/',
+  plugins: [react(), vanillaExtractPlugin()],
+});
+```
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+Configure Github Pages custom workflow according to the [Vite docs | Github Pages deployment](https://vitejs.dev/guide/static-deploy#github-pages).
 
-You can host your site using one of these solutions or any of our other trusted providers. [Read more about our recommended and trusted hosts](https://medium.com/frontend-mentor/frontend-mentor-trusted-hosting-providers-bf000dfebe).
+### Built with
 
-## Create a custom `README.md`
+- Semantic HTML5 markup
+- Flexbox
+- Grid
+- Mobile-first workflow
+- [React](https://reactjs.org/)
+- [Vite](https://vitejs.dev/)
+- [Typescript](https://www.typescriptlang.org/)
+- [Vanilla Extract](https://vanilla-extract.style/)
 
-We strongly recommend overwriting this `README.md` with a custom one. We've provided a template inside the [`README-template.md`](./README-template.md) file in this starter code.
+### What I learned
 
-The template provides a guide for what to add. A custom `README` will help you explain your project and reflect on your learnings. Please feel free to edit our template as much as you like.
+Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
 
-Once you've added your information to the template, delete this file and rename the `README-template.md` file to `README.md`. That will make it show up as your repository's README file.
+To see how you can add code snippets, see below:
 
-## Submitting your solution
+```html
+<h1>Some HTML code I'm proud of</h1>
+```
 
-Submit your solution on the platform for the rest of the community to see. Follow our ["Complete guide to submitting solutions"](https://medium.com/frontend-mentor/a-complete-guide-to-submitting-solutions-on-frontend-mentor-ac6384162248) for tips on how to do this.
+```css
+.proud-of-this-css {
+  color: papayawhip;
+}
+```
 
-Remember, if you're looking for feedback on your solution, be sure to ask questions when submitting it. The more specific and detailed you are with your questions, the higher the chance you'll get valuable feedback from the community.
+```js
+const proudOfThisFunc = () => {
+  console.log('🎉');
+};
+```
 
-## Sharing your solution
+If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
 
-There are multiple places you can share your solution:
+**Note: Delete this note and the content within this section and replace with your own learnings.**
 
-1. Share your solution page in the **#finished-projects** channel of our [community](https://www.frontendmentor.io/community). 
-2. Tweet [@frontendmentor](https://twitter.com/frontendmentor) and mention **@frontendmentor**, including the repo and live URLs in the tweet. We'd love to take a look at what you've built and help share it around.
-3. Share your solution on other social channels like LinkedIn.
-4. Blog about your experience building your project. Writing about your workflow, technical choices, and talking through your code is a brilliant way to reinforce what you've learned. Great platforms to write on are [dev.to](https://dev.to/), [Hashnode](https://hashnode.com/), and [CodeNewbie](https://community.codenewbie.org/).
+### Continued development
 
-We provide templates to help you share your solution once you've submitted it on the platform. Please do edit them and include specific questions when you're looking for feedback. 
+Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
 
-The more specific you are with your questions the more likely it is that another member of the community will give you feedback.
+**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
 
-## Got feedback for us?
+### Useful resources
 
-We love receiving feedback! We're always looking to improve our challenges and our platform. So if you have anything you'd like to mention, please email hi[at]frontendmentor[dot]io.
+The disadvantages of runtime CSS-in-JS:
 
-This challenge is completely free. Please share it with anyone who will find it useful for practice.
+- [Why we are breaking up with CSS-in-JS](https://dev.to/srmagura/why-were-breaking-up-wiht-css-in-js-4g9b) - increases bundle size, runtime overhead and clutters react dev tools; frequent css updates cause the whole react tree to re-render; with SSR and other component libraries there is a lot that can go wrong
 
-**Have fun building!** 🚀
+The advantages of CSS-in-JS in general:
+
+1. Styles are locally-scoped.
+1. Styles are colocated with the components they apply to.
+1. You can use JavaScript variables in styles.
+
+The advantages of compile-time CSS-in-JS:
+
+- [Douges.dev | Change how you write your CSS-in-JS for better performance](https://douges.dev/blog/taming-the-beast-that-is-css-in-js) - Clean and typed CSS code; correct usage of `styles` prop for dynamic styling
+- [Avoiding dynamic CSS-in-JS styles in React](https://nickb.dev/blog/avoid-dynamic-css-in-js-styles-in-react/) - Tailwind, CSS Modules and dynamic inline styling
+
+1. Usage of theme tokens.
+1. Usage of CSS variables.
+1. Little runtime overhead; best way to style dynamic attributes is to use the `style` prop.
+
+The specific advantages of `Vanilla Extract`:
+
+- Typescript support: IntelliSense and autocomplete, alerts for unused styles
+- Atomic CSS: Strict separation of styles, nesting of selectors is discouraged / not possible
+
+Possible stylesheet + dynamic inline styling solutions:
+
+- CSS Modules
+- CSS-in-JS compiled at build time like [Vanilla Extract](https://vanilla-extract.style/), [Linaria](https://linaria.dev/)
+- Atomic / utility CSS like [Tailwind CSS](https://tailwindcss.com/)
+
+## Author
+
+- Website - [florianfrosch.de](https://florianfrosch.de/)
+- Frontend Mentor - [@ffrosch](https://www.frontendmentor.io/profile/ffrosch)
+- Stackoverflow - [ffrosch](https://stackoverflow.com/users/9152905/ffrosch)
+- Leetcode - [ffrosch](https://leetcode.com/u/ffrosch/)
+
+## Acknowledgments
+
+Here are the articles and solutions that helped me during the challenge:
+
+- [Kilterset | Styling with Vanilla Extract](https://www.kilterset.com/blog/styling-with-vanilla-extract) - This gave me a good basic understanding of how to use themes and globalStyle
+- [Nearform Commerce | Theming a React Application with Vanilla Extract](https://commerce.nearform.com/blog/2021/vanilla-extract) - How to use themes and theme tokens
