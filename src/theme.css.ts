@@ -39,7 +39,8 @@ export const vars = createGlobalTheme(':root', {
     xs: '0.5rem',
     sm: '1rem',
     md: '1.75rem',
-    lg: '2.5rem',
+    lg: '2rem',
+    xl: '2.5rem',
   },
 
   fontFamily: {

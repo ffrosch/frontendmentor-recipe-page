@@ -28,14 +28,18 @@ globalStyle('h1, h2, h3, h4, h5, h6', {
 
 globalStyle('h1', {
   fontSize: vars.fontSize.xl,
+  letterSpacing: '0.075rem',
+  fontWeight: 700,
 });
 
 globalStyle('h2', {
   fontSize: vars.fontSize.lg,
+  fontWeight: 400,
 });
 
 globalStyle('h3', {
   fontFamily: vars.fontFamily.text,
   fontSize: vars.fontSize.md,
   letterSpacing: '-0.075em',
+  fontWeight: 600,
 });

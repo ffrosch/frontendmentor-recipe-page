@@ -3,7 +3,6 @@ import { media, vars } from '../theme.css.ts';
 
 export const recipe = style({
   backgroundColor: vars.color.white[100],
-  lineHeight: 2,
 
   '@media': {
     [media.query.sm]: {
@@ -21,7 +20,7 @@ export const imageContainer = style({
   '@media': {
     [media.query.sm]: {
       height: `min(calc(80vw - 175px), 300px)`,
-      margin: vars.space.lg,
+      margin: vars.space.xl,
     },
   },
 });
@@ -35,21 +34,26 @@ export const image = style({
 });
 
 export const section = style({
-  margin: `${vars.space.md} ${vars.space.lg}`,
+  margin: `${vars.space.md} ${vars.space.xl}`,
+});
+
+export const sectionHeading = style({
+  color: vars.color.primary,
+  marginBottom: vars.space.sm,
 });
 
 export const title = style({
   color: vars.color.darkCharcoal,
-  marginBottom: vars.space.sm,
-  letterSpacing: '0.075rem',
+  marginBottom: vars.fontSize.md,
 });
 
 export const preparationContainer = style({
   background: vars.color.white[200],
-  padding: vars.space.sm,
+  padding: vars.space.md,
   paddingLeft: vars.space.md,
+  borderRadius: '0.75rem',
   marginTop: vars.space.md,
-  marginBottom: vars.space.lg,
+  marginBottom: vars.space.xl,
 });
 
 export const preparationHeading = style({
@@ -58,14 +62,31 @@ export const preparationHeading = style({
   letterSpacing: 0,
 });
 
-export const sectionHeading = style({
-  color: vars.color.primary,
-  marginBottom: vars.space.sm,
+export const ul = style({
+  paddingLeft: vars.fontSize.md,
+});
+
+export const li = style({
+  paddingLeft: vars.fontSize.md,
+  marginBottom: vars.space.xs,
+  selectors: {
+    '&::marker': {
+      fontSize: '0.75em',
+      color: vars.color.primary,
+    },
+    [`${preparationContainer} &::marker`]: {
+      color: vars.color.accent,
+    },
+    [`${section} ol &::marker`]: {
+      fontSize: '1em',
+      fontWeight: 700,
+    },
+  },
 });
 
 export const hr = style({
   height: 1,
-  margin: `0 ${vars.space.lg}`,
+  margin: `0 ${vars.space.xl}`,
   border: 'none',
   background: vars.color.white[400],
 });
@@ -74,6 +95,10 @@ export const table = style({
   width: '100%',
   borderCollapse: 'collapse',
   textAlign: 'left',
+});
+
+export const caption = style({
+  marginBottom: vars.space.sm,
 });
 
 export const tr = style({
@@ -93,11 +118,12 @@ export const tr = style({
 
 export const th = style({
   textTransform: 'capitalize',
-  paddingLeft: '2rem',
+  paddingLeft: vars.space.lg,
 });
 
 export const td = style({
   color: vars.color.primary,
-  fontWeight: 'bold',
-  paddingRight: '2rem',
+  fontWeight: 700,
+  padding: '0.75rem 0',
+  paddingRight: vars.space.lg,
 });

@@ -30,6 +30,19 @@ export default function Recipe(props: IRecipe) {
     description,
   } = props;
 
+  let prepList = [
+    <p>
+      <strong>Total:</strong> Approximately {time.preparation + time.cooking}{' '}
+      minutes
+    </p>,
+    <p>
+      <strong>Preparation:</strong> {time.preparation} minutes
+    </p>,
+    <p>
+      <strong>Cooking:</strong> {time.cooking} minutes
+    </p>,
+  ];
+
   return (
     <article className={styles.recipe}>
       <div className={styles.imageContainer}>
@@ -47,32 +60,29 @@ export default function Recipe(props: IRecipe) {
         <p>{description}</p>
         <div className={styles.preparationContainer}>
           <h3 className={styles.preparationHeading}>Preparation time</h3>
-          <ul>
-            <li>
-              <p>
-                <strong>Total:</strong> Approximately{' '}
-                {time.preparation + time.cooking} minutes
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Preparation:</strong> {time.preparation} minutes
-              </p>
-            </li>
-            <li>
-              <p>
-                <strong>Cooking:</strong> {time.cooking} minutes
-              </p>
-            </li>
+          <ul className={styles.ul}>
+            {prepList.map((item, index) => {
+              return (
+                <li
+                  key={index}
+                  className={styles.li}
+                >
+                  {item}
+                </li>
+              );
+            })}
           </ul>
         </div>
       </section>
       <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Ingredients</h2>
-        <ul>
+        <ul className={styles.ul}>
           {ingredients.map((ingredient, index) => {
             return (
-              <li key={index}>
+              <li
+                key={index}
+                className={styles.li}
+              >
                 <p>{ingredient}</p>
               </li>
             );
@@ -82,11 +92,14 @@ export default function Recipe(props: IRecipe) {
       <hr className={styles.hr} />
       <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Instructions</h2>
-        <ol>
+        <ol className={styles.ul}>
           {instructions.map((instruction, index) => {
             const pos = instruction.search(':');
             return (
-              <li key={index}>
+              <li
+                key={index}
+                className={styles.li}
+              >
                 {pos > 0 ? (
                   <p>
                     <strong>{instruction.slice(0, pos + 1)}</strong>
@@ -104,7 +117,7 @@ export default function Recipe(props: IRecipe) {
       <section className={styles.section}>
         <h2 className={styles.sectionHeading}>Nutrition</h2>
         <table className={styles.table}>
-          <caption>
+          <caption className={styles.caption}>
             The table below shows nutritional values per serving without the
             additional fillings.
           </caption>
