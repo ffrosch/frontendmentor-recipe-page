@@ -8,3 +8,8 @@ export const main = style({
   width: '100%',
   minWidth: '100vw',
 });
+
+export const loader = style({
+  marginTop: 'auto',
+  alignSelf: 'center',
+});

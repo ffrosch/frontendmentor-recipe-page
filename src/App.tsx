@@ -19,7 +19,11 @@ const App = () => {
 
   return (
     <main className={styles.main}>
-      {recipe ? <Recipe {...recipe} /> : 'Loading...'}
+      {recipe ? (
+        <Recipe {...recipe} />
+      ) : (
+        <p className={styles.loader}>Loading...</p>
+      )}
       <Footer />
     </main>
   );

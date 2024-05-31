@@ -3,7 +3,8 @@ import { vars } from '../theme.css.ts';
 
 export const footer = style({
   textAlign: 'center',
-  margin: '1rem',
+  alignSelf: 'end',
+  padding: '1rem',
 });
 
 export const a = style({
