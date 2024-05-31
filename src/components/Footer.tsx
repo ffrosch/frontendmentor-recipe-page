@@ -2,10 +2,7 @@ import { a, footer } from './Footer.css.ts';
 
 export default function Footer() {
   return (
-    <footer
-      role='contentinfo'
-      className={footer}
-    >
+    <footer className={footer}>
       Challenge by{' '}
       <a
         href='https://www.frontendmentor.io?ref=challenge'

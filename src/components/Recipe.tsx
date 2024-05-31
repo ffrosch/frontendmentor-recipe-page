@@ -54,8 +54,8 @@ export default function Recipe(props: IRecipe) {
           height='600'
         />
       </div>
+      <h1 className={styles.title}>{title} Recipe</h1>
       <section className={styles.section}>
-        <h1 className={styles.title}>{title} Recipe</h1>
         <h2 className={srOnly}>Summary</h2>
         <p>{description}</p>
         <div className={styles.preparationContainer}>

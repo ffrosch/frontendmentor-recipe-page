@@ -42,10 +42,13 @@ export const sectionHeading = style({
   marginBottom: vars.space.sm,
 });
 
-export const title = style({
-  color: vars.color.darkCharcoal,
-  marginBottom: vars.fontSize.md,
-});
+export const title = style([
+  section,
+  {
+    color: vars.color.darkCharcoal,
+    marginBottom: vars.fontSize.md,
+  },
+]);
 
 export const preparationContainer = style({
   background: vars.color.roseWhite,
